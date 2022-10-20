@@ -1,0 +1,24 @@
+{
+  "name": "resrecs",
+  "version": "1.0.0",
+  "description": "**_A restaurant recommendation application for coworkers and event planners_**",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscarpelli3/ResRecs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jscarpelli3/ResRecs/issues"
+  },
+  "homepage": "https://github.com/jscarpelli3/ResRecs#readme",
+  "dependencies": {
+    "mongoose": "^6.6.5"
+  }
+}
