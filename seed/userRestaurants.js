@@ -47,8 +47,7 @@ const createRestaurants = async () => {
       dinner: true,
       notes: 'Closed Mondays',
       website: 'https://www.kettnerexchange.com/',
-      contributor: [],
-      comments: []
+      contributor: []
     },
     {
       rname: 'ATX Cocina',
@@ -61,8 +60,7 @@ const createRestaurants = async () => {
       dinner: true,
       notes: 'Company favorite - upscale modern Mexican',
       website: 'https://www.atxcocina.com/',
-      contributor: [],
-      comments: []
+      contributor: []
     },
     {
       rname: 'Ramerino - Italian Prime ',
@@ -76,8 +74,7 @@ const createRestaurants = async () => {
       notes:
         'Lunch is prix fixe.  Good for clients/business lunches and dinners',
       website: 'https://www.atxcocina.com/',
-      contributor: [],
-      comments: []
+      contributor: []
     },
     {
       rname: 'Wayfare Tavern',
@@ -90,8 +87,7 @@ const createRestaurants = async () => {
       dinner: true,
       notes: '',
       website: 'https://www.wayfaretavern.com/',
-      contributor: [],
-      comments: []
+      contributor: []
     },
     {
       rname: 'Majordomo',
@@ -104,8 +100,7 @@ const createRestaurants = async () => {
       dinner: true,
       notes: '',
       website: 'https://www.majordomo.la/',
-      contributor: [],
-      comments: []
+      contributor: []
     },
     {
       rname: 'Mooo',
@@ -118,8 +113,7 @@ const createRestaurants = async () => {
       dinner: true,
       notes: 'Seaport',
       website: 'https://www.mooorestaurant.com/',
-      contributor: [],
-      comments: []
+      contributor: []
     }
   ]
 

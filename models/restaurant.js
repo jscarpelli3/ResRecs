@@ -13,8 +13,7 @@ const Restaurant = new Schema(
     dinner: { type: Boolean },
     notes: { type: String, required: false },
     website: { type: String, required: true },
-    contributor: [{ type: Schema.Types.ObjectId, ref: 'user_id' }],
-    comments: [{ type: Schema.Types.ObjectId, ref: 'user_id' }]
+    contributor: { type: Schema.Types.ObjectId, ref: 'user_id' }
   },
   { timestamps: true }
 )
