@@ -68,7 +68,7 @@ const createRestaurant = async (req, res) => {
   }
 }
 
-const deleteRest = async (req,res) => {
+const deleteRest = async (req, res) => {
   try {
     const { id } = req.params
     const deleted = await Restaurants.findByIdAndDelete(id)
@@ -160,7 +160,7 @@ const getCommentsByUser = async (req, res) => {
   }
 }
 
-const deleteComment = async (req,res) => {
+const deleteComment = async (req, res) => {
   try {
     const { id } = req.params
     const deleted = await Comments.findByIdAndDelete(id)
@@ -173,8 +173,6 @@ const deleteComment = async (req,res) => {
   }
 }
 
-
-
 module.exports = {
   getAll,
   getAllRestaurantsAlpha,
@@ -186,7 +184,7 @@ module.exports = {
   getUserById,
   makeComment,
   getCommentsByUser,
-  getCommentsByRest
+  getCommentsByRest,
   deleteComment,
   deleteRest,
   updateRest
