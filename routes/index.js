@@ -7,7 +7,7 @@ router.get('/', (req, res) => res.send('This is api root!'))
 router.get('/main', controllers.getAll)
 
 router.get('/restaurants/:id', controllers.getRestById)
-router.put('/restaurants/:id', controllers.getRestById)
+router.put('/restaurants/:id', controllers.updateRest)
 router.delete('/restaurants/:id', controllers.deleteRest)
 router.get('/restaurants/comments', controllers.getCommentsByRest)
 router.post('/newrestaurant', controllers.createRestaurant)
