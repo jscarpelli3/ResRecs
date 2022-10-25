@@ -1,7 +1,9 @@
 .App {
   /* text-align: center; */
-  background-image: url('');
+  background-image: url('/Users/jscarpelli/ga_seir919/projects/ResRecs/resrecs_frontend/src/images/simon-karemann-p85-MG66GRY-unsplash.jpg');
   background-color: #ffffff;
+  background-size: cover;
+  color: white;
 }
 
 /* .App-logo {
@@ -15,15 +17,6 @@
   }
 } */
 
-header {
-  background-color: #f0f0f0;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  color: white;
-}
 
 .main {
   display: grid;
@@ -45,26 +38,97 @@ header {
 }
 
 .rest-card {
+  height: 160px;
+  width: 160px;
   margin: 4px;
   padding: 4px;
   border-style: solid;
   border-color: #171819;
   border-radius: 12px;
   border-width: 1px;
-  
-
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-nav {
-  display: inline-flex;
-  margin: 24px 24px 0 16px;
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Lexend';
+  padding: 12px 18px 0 18px;
+  max-height: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 2px solid black;
 }
+
+p {
+  margin: 0;
+  text-align: right;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(249, 255, 166);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.logo {
+  margin: 0;
+  grid-column: 1/4;
+  grid-row: 1/4
+}
+
+.home {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.rules {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.add {
+  margin: 0;
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
 
 h2 {
   margin-left: 12px;
   margin-right: 12px;
 }
 
+.restpic {
+  height: 200px;
+  width: 200px;
+}
+
+.add-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 12px;
+  text-align: left;
+  }
+
+input, textarea, select {
+  font-family: 'Lexend';
+  margin: 10px;
+  padding: 10px;
+  width: 180px;
+  border: 2px solid red;
+  border-radius: 4px
+}
+
+label {
+  font-family: 'Lexend';
+  margin: 20px;
+}
 .App-link {
   color: #171819;
 }

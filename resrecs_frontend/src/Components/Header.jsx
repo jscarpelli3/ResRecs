@@ -5,11 +5,10 @@ import logo from '../images/rrlogo.png'
 const Header = () => {
   return (
     <header>
-      <Link to="/"><img alt="logo" src={logo}></img></Link>
-      <nav>
-        <Link to="/"><h2>Home</h2></Link>
-        <Link to="/therules"><h2>The Rules</h2></Link><Link to="/add"><h2>Add Restaurant</h2></Link>
-      </nav>
+      <div className="logo"><Link to="/"><img alt="logo" src={logo}></img></Link></div>
+        <div className='home'><Link to="/"><p>Home</p></Link></div>
+        <div className='rules'><Link to="/therules"><p>The Rules</p></Link></div>
+        <div className='add'><Link to="/add"><p>Add Restaurant</p></Link></div>
     </header>
   )
 }

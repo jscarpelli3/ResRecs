@@ -26,23 +26,18 @@ const Home = () => {
   }
 
   return (
-    <div>
-      <div className="main">
-        <QuickSearch />
-        <div className="rest-listing">
-          {restaurants?.map((rest, index) => (
-            <Link key={rest.id} to={`/retaurants/${rest.id}`}>
-              <RestaurantListing
-                key={rest.id}
-                onClick={onClick}
-                // image={game.background_image}
-                name={rest?.rname}
-                city={rest?.city}
-              />
-            </Link>
-          ))}
-        </div>
-      </div>
+    <div className="rest-listing">
+      {restaurants?.map((rest, index) => (
+        <Link key={rest.id} to={`/retaurants/${rest.id}`}>
+          <RestaurantListing
+            key={rest.id}
+            onClick={onClick}
+            image={rest.image}
+            name={rest?.rname}
+            city={rest?.city}
+          />
+        </Link>
+      ))}
     </div>
   )
 }

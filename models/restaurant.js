@@ -12,7 +12,7 @@ const Restaurant = new Schema(
     lunch: { type: Boolean },
     dinner: { type: Boolean },
     notes: { type: String, required: false },
-    website: { type: String, required: true },
+    website: { type: String, required: false },
     image: { type: String, required: false },
     contributor: { type: Schema.Types.ObjectId, ref: 'user_id' }
   },

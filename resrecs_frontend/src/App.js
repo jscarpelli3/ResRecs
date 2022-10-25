@@ -1,12 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './Components/Header'
 import './App.css'
-import TheRules from './pages/TheRules'
-import Home from './pages/Home'
-import AddRest from './Components/AddRest'
+import Main from './Components/Main'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import QuickSearch from './Components/QuickSearch'
 
 const App = () => {
   const [quickSearch, setQuickSearch] = useState('')
@@ -33,12 +30,7 @@ const App = () => {
       <Header />
       <div>
         <div className="main-container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            {/* <Route path="/searched" element={<Searched />} /> */}
-            <Route path="/therules" element={<TheRules />} />
-            <Route path="/add" element={<AddRest />} />
-          </Routes>
+          <Main />
         </div>
       </div>
     </div>
