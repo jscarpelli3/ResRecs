@@ -9,12 +9,13 @@ const QuickSearch = ({value}) => {
     setQuickSearch(event.target.value)
   }
 
-  const searchByCity = async () => {
+  const searchByCity = async (evt) => {
+    evt.preventDefault()
     try {
-      console.log('FUGGIN SERCH BY CITY')
-      const response = await axios.get(`http://localhost:3001/api/restaurants?${quickSearch}`)
+            console.log('FUGGIN SERCH BY CITY')
+      const response = await axios.get(`http://localhost:3001/api/restaurants?city=${quickSearch}`)
       setSearchResults(response.data.rests)
-      console.log(searchResults)
+      console.log(response.data.rests)
     } catch (err) {
       console.log(err)
     }

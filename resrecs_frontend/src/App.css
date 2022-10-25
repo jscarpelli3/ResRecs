@@ -34,7 +34,7 @@
   grid-column: 2/3;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-
+  
 }
 
 .rest-card {
@@ -48,6 +48,26 @@
   border-width: 1px;
   background-color: rgba(255, 255, 255, 0.5);
 }
+.rest-details {
+  /* display: flex;
+  align-content: center; */
+  font-family: 'Lexend';
+  color: black;
+  margin: 4px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #171819;
+  border-radius: 12px;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+/* HEADER STYLES */
 
 header {
   background-color: rgba(255, 255, 255, 0.5);
@@ -60,7 +80,7 @@ header {
   border: 2px solid black;
 }
 
-p {
+.home, .rules, .add {
   margin: 0;
   text-align: right;
 }
@@ -100,10 +120,6 @@ a:hover {
 }
 
 
-h2 {
-  margin-left: 12px;
-  margin-right: 12px;
-}
 
 .restpic {
   height: 200px;

@@ -11,7 +11,6 @@ const AddRest = () => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault()
-    console.log(formState)
     axios.post('http://localhost:3001/api/newrestaurant', formState)
     setFormState(initialState)
   }

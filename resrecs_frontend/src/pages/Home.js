@@ -11,7 +11,6 @@ const Home = () => {
     try {
       const response = await axios.get('http://localhost:3001/api/main')
       setRests(response.data.rests)
-      console.log(restaurants)
     } catch (err) {
       console.log(err)
     }
@@ -21,18 +20,16 @@ const Home = () => {
     getRests()
   }, [])
 
-  const onClick = () => {
-    console.log('I FUGGIN CLICKED')
-  }
+  const onClick = () => {}
 
   return (
     <div className="rest-listing">
       {restaurants?.map((rest, index) => (
-        <Link key={rest.id} to={`/retaurants/${rest.id}`}>
+        <Link key={rest._id} to={`/restaurants/${rest._id}`}>
           <RestaurantListing
-            key={rest.id}
+            key={rest._id}
             onClick={onClick}
-            image={rest.image}
+            image={rest?.image}
             name={rest?.rname}
             city={rest?.city}
           />

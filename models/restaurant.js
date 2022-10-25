@@ -14,7 +14,7 @@ const Restaurant = new Schema(
     notes: { type: String, required: false },
     website: { type: String, required: false },
     image: { type: String, required: false },
-    contributor: { type: Schema.Types.ObjectId, ref: 'user_id' }
+    contributor: { type: User.Types.ObjectId, ref: 'User' }
   },
   { timestamps: true }
 )

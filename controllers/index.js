@@ -49,11 +49,18 @@ const getAllRestaurantsCity = async (req, res) => {
 const getRestById = async (req, res) => {
   try {
     const { id } = req.params
-    const rest = await Restaurants.findById(id)
-    return res.status(200).json({ rest })
+    const rest = await Restaurants.findById(id).populate('contributor')
+    return res.status(200).json(rest)
   } catch (error) {
     return res.status(500).send(error.message)
   }
+  // try {
+  //   const searched = req.params.id
+  //   const curRest = await Restaurants.find({ _id: `${id}` })
+  //   return res.status(200).json({ curRest })
+  // } catch (error) {
+  //   return res.status(500).send(error.message)
+  // }
 }
 
 const createRestaurant = async (req, res) => {
