@@ -17,6 +17,7 @@ const Main = () => {
         <Route path="/therules" element={<TheRules />} />
         <Route path="/add" element={<AddRest />} />
         <Route path="/restaurants/:id" element={<RestDetails />} />
+        <Route path="/update" element={<updateRest />} />
       </Routes>
       </div>
     </div>

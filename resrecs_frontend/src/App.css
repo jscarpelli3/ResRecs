@@ -48,9 +48,19 @@
   border-width: 1px;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+.detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.update-container {
+  grid-column: 2/3;
+}
 .rest-details {
   /* display: flex;
   align-content: center; */
+  grid-column: 1/2;
   font-family: 'Lexend';
   color: black;
   margin: 4px;

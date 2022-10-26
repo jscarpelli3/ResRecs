@@ -54,13 +54,6 @@ const getRestById = async (req, res) => {
   } catch (error) {
     return res.status(500).send(error.message)
   }
-  // try {
-  //   const searched = req.params.id
-  //   const curRest = await Restaurants.find({ _id: `${id}` })
-  //   return res.status(200).json({ curRest })
-  // } catch (error) {
-  //   return res.status(500).send(error.message)
-  // }
 }
 
 const createRestaurant = async (req, res) => {
