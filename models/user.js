@@ -7,8 +7,7 @@ const User = new Schema(
     homeoffice: { type: String, required: true },
     image: { type: String, required: false },
     department: { type: String, required: true },
-    about: { type: String, required: false },
-    recs: [{ type: Schema.Types.ObjectId, ref: 'restaurant_id' }]
+    about: { type: String, required: false }
   },
   { timestamps: true }
 )

@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('/Users/jscarpelli/ga_seir919/projects/ResRecs/resrecs_frontend/src/images/simon-karemann-p85-MG66GRY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {

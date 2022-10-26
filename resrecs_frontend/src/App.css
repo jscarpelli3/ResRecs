@@ -1,22 +1,10 @@
+
 .App {
   /* text-align: center; */
-  background-image: url('/Users/jscarpelli/ga_seir919/projects/ResRecs/resrecs_frontend/src/images/simon-karemann-p85-MG66GRY-unsplash.jpg');
-  background-color: #ffffff;
   background-size: cover;
   color: white;
+  size: 100%;
 }
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;sss
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 
 .main {
   display: grid;
@@ -38,8 +26,9 @@
 }
 
 .rest-card {
-  height: 160px;
-  width: 160px;
+  text-align: center;
+  height: 200px;
+  width: 200px;
   margin: 4px;
   padding: 4px;
   border-style: solid;
@@ -58,8 +47,6 @@
   grid-column: 2/3;
 }
 .rest-details {
-  /* display: flex;
-  align-content: center; */
   grid-column: 1/2;
   font-family: 'Lexend';
   color: black;
@@ -69,12 +56,27 @@
   border-color: #171819;
   border-radius: 12px;
   border-width: 1px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.comments-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+.comment-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 12px 4px 2px 4px;
+  
 }
 
 h2 {
   margin-left: 12px;
   margin-right: 12px;
+}
+
+h4, h5 {
+  margin:0;
+  color: rgb(50, 50, 50);
 }
 
 /* HEADER STYLES */
@@ -130,6 +132,10 @@ a:hover {
 }
 
 
+.img-wrapper {
+  margin: 0;
+  padding: 0;
+}
 
 .restpic {
   height: 200px;

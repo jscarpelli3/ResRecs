@@ -3,9 +3,9 @@ const Schema = mongoose.Schema
 
 const Comment = new Schema(
   {
-    user: { type: Schema.Types.ObjectId, ref: 'user_id' },
+    user: { type: Schema.Types.ObjectId, ref: 'User' },
     comment: { type: String, required: false },
-    rest: { type: Schema.Types.ObjectId, ref: 'restaurant_id' }
+    rest: { type: Schema.Types.ObjectId, ref: 'Restaurant' }
   },
   { timestamps: true }
 )

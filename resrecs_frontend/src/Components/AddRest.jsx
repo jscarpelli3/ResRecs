@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
@@ -6,12 +6,14 @@ const AddRest = () => {
   const initialState = { rname:'', cuisine: '', city: '', state:'', eventType: '', breakfast: false, lunch: false, dinner: false, website: '', notes: '', image: '', contributor: ''}
   const [formState, setFormState] = useState(initialState)
   const rname=false
+  const navigate = useNavigate()
 
   const handleSubmit = (evt) => {
     evt.preventDefault()
     let newRest = {...formState, contributor: "6352d1d1e2832c5fd43ad0e7"}
     axios.post('http://localhost:3001/api/newrestaurant', newRest)
     setFormState(initialState)
+    navigate('/thanks')
   }
 
   const handleChange = (evt) => {

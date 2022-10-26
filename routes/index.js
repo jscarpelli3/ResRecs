@@ -18,8 +18,8 @@ router.get('/users', controllers.getAllUsers)
 router.get('/users/:id', controllers.getUserById)
 router.get('/users/one', controllers.getUser)
 
-router.post('/comment', controllers.getCommentsByUser)
-router.delete('/comment', controllers.deleteComment)
-router.get('/comment', controllers.getCommentsByUser)
+router.post('/comment', controllers.makeComment)
+router.delete('/comment/:id', controllers.deleteComment)
+router.get('/comment/:id', controllers.getCommentsByRest)
 
 module.exports = router

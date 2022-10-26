@@ -1,17 +1,11 @@
-import { Link } from 'react-router-dom'
-
-
-const Comment = () => {
+const Comment = ({name, comment}) => {
   
   return (
-    <div className="rest-card">
-      {/* <div className="img-wrapper">
-       <img style={{ width: "50%", height: "50%" }} className="restpic" src={image} alt="rest-image"></img>
-      </div>
-      <div className="card-info">
-        <h4>{name}</h4>
-        <h5>{city}</h5>
-      </div> */}
+    <div className="comment-card">
+      <h4>User:</h4>
+      <div>{name}</div>
+      <h5>Comment:</h5>
+      <p>{comment}</p>
     </div>
   )
 }

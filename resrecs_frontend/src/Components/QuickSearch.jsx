@@ -1,33 +1,16 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-const QuickSearch = ({value}) => {
-  const [quickSearch, setQuickSearch] = useState('')
-  const [searchResults, setSearchResults] = useState(null)
+const QuickSearch = ({handleChange, handleSubmit, term, setTerm}) => {
 
-  const handleChange = (event) => {
-    setQuickSearch(event.target.value)
-  }
-
-  const searchByCity = async (evt) => {
-    evt.preventDefault()
-    try {
-            console.log('FUGGIN SERCH BY CITY')
-      const response = await axios.get(`http://localhost:3001/api/restaurants?city=${quickSearch}`)
-      setSearchResults(response.data.rests)
-      console.log(response.data.rests)
-    } catch (err) {
-      console.log(err)
-    }
-  }
   
 
   return (
-    <form onSubmit={searchByCity}>
+    <form onSubmit={handleSubmit}>
         <input
           type="text"
           city="search"
-          value={quickSearch}
+          value={term}
           placeholder="city"
           onChange={handleChange}
           ></input>
