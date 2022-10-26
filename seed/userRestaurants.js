@@ -1,38 +1,8 @@
 const db = require('../db')
-const User = require('../models/user')
 const Restaurant = require('../models/restaurant')
 
 // Connect to the database
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
-
-const createUsers = async () => {
-  const newUsers = [
-    {
-      username: 'Jack Squat',
-      homeoffice: 'Chicago',
-      image: '',
-      department: 'Flavor department',
-      about: "I'm great"
-    },
-    {
-      username: 'Freddie Freeloader',
-      homeoffice: 'Los Angeles',
-      image: '',
-      department: 'Digging and Forking department',
-      about: "I'm decent"
-    },
-    {
-      username: 'Allie Can',
-      homeoffice: 'Austin',
-      image: '',
-      department: 'Steppin and Glidin department',
-      about: "I'm fair"
-    }
-  ]
-  await User.insertMany(newUsers)
-  console.log('Created Users!')
-  return newUsers
-}
 
 const createRestaurants = async () => {
   const restaurants = [
@@ -46,8 +16,10 @@ const createRestaurants = async () => {
       lunch: false,
       dinner: true,
       notes: 'Closed Mondays',
+      image:
+        '/Users/jscarpelli/ga_seir919/projects/ResRecs/resrecs_frontend/src/images/Kettner.png',
       website: 'https://www.kettnerexchange.com/',
-      contributor: []
+      contributor: '6358c44055c3a24cd7f7bf88'
     },
     {
       rname: 'ATX Cocina',
@@ -59,8 +31,9 @@ const createRestaurants = async () => {
       lunch: false,
       dinner: true,
       notes: 'Company favorite - upscale modern Mexican',
+      image: '',
       website: 'https://www.atxcocina.com/',
-      contributor: []
+      contributor: '6358c44055c3a24cd7f7bf8a'
     },
     {
       rname: 'Ramerino - Italian Prime ',
@@ -73,8 +46,9 @@ const createRestaurants = async () => {
       dinner: true,
       notes:
         'Lunch is prix fixe.  Good for clients/business lunches and dinners',
+      image: '',
       website: 'https://www.atxcocina.com/',
-      contributor: []
+      contributor: '6358c44055c3a24cd7f7bf88'
     },
     {
       rname: 'Wayfare Tavern',
@@ -87,7 +61,8 @@ const createRestaurants = async () => {
       dinner: true,
       notes: '',
       website: 'https://www.wayfaretavern.com/',
-      contributor: []
+      image: '',
+      contributor: '6358c44055c3a24cd7f7bf89'
     },
     {
       rname: 'Majordomo',
@@ -100,7 +75,8 @@ const createRestaurants = async () => {
       dinner: true,
       notes: '',
       website: 'https://www.majordomo.la/',
-      contributor: []
+      image: '',
+      contributor: '6358c44055c3a24cd7f7bf88'
     },
     {
       rname: 'Mooo',
@@ -113,7 +89,8 @@ const createRestaurants = async () => {
       dinner: true,
       notes: 'Seaport',
       website: 'https://www.mooorestaurant.com/',
-      contributor: []
+      image: '',
+      contributor: '6358c44055c3a24cd7f7bf89'
     }
   ]
 
