@@ -34,8 +34,6 @@ const RestDetails = () => {
       toggleUpdate(!upDate)
     }
     
-    console.log(updateFinished)
-    
     return (
       <div className="detail-container">
         <div className="rest-details">
