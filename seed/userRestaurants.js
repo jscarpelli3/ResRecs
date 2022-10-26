@@ -16,8 +16,7 @@ const createRestaurants = async () => {
       lunch: false,
       dinner: true,
       notes: 'Closed Mondays',
-      image:
-        '/Users/jscarpelli/ga_seir919/projects/ResRecs/resrecs_frontend/src/images/Kettner.png',
+      image: 'https://images.otstatic.com/prod/24602000/1/huge.jpg',
       website: 'https://www.kettnerexchange.com/',
       contributor: '6358c44055c3a24cd7f7bf88'
     },
