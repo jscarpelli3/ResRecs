@@ -1,13 +1,14 @@
 const mongoose = require('mongoose')
 
-// let MONGODB_URI = 'mongodb://127.0.0.1:27017/resrecDB'
-let dbUrl =
-  process.env.NODE_ENV === 'production'
-    ? process.env.MONGODB_URI
-    : 'mongodb://127.0.0.1:27017/<database_name>'
+let MONGODB_URI = 'mongodb://127.0.0.1:27017/resrecDB'
+// let dbUrl =
+//   process.env.NODE_ENV === 'production'
+//     ? process.env.MONGODB_URI
+//     : 'mongodb://127.0.0.1:27017/<database_name>'
 
 mongoose
-  .connect(dbURL)
+  // .connect(dbURL)
+  .connect(MONGODB_URI)
   .then(() => {
     console.log('Successfully connected to MongoDB.')
   })

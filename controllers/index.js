@@ -96,18 +96,26 @@ const getUser = async (req, res) => {
   try {
     const curUser = {}
     const searched = req.query.user
-    const upUser = await Users.find()
+    const upUser = await User.find()
     upUser.forEach((use) => {
       if (use.username.toUpperCase() === searched.toUpperCase()) {
         curUser = use
       }
     })
-
-    return res.status(200).json({ curUser })
   } catch (error) {
     return res.status(500).send(error.message)
   }
 }
+
+const validateUser = async (req, res) => {
+  try {
+    const upUser = await User.find({ username: req.params.user })
+    return res.status(200).json({ upUser })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const getUserById = async (req, res) => {
   try {
     const { id } = req.params
@@ -178,8 +186,9 @@ module.exports = {
   getRestById,
   createRestaurant,
   getAllUsers,
-  getUser,
+  validateUser,
   getUserById,
+  getUser,
   makeComment,
   getCommentsByUser,
   getCommentsByRest,

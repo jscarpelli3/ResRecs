@@ -6,9 +6,20 @@ const Login = ({userName, userId, pass}) => {
   const [loginInfo, setLoginInfo]=useState(initLogin)
 
   
-  const handleSubmit = (evt) => {
+  const handleSubmit = async (evt) => {
     evt.preventDefault()
-  }
+    const userRecord = await axios.get(`http://localhost:3001/api/validate/${loginInfo.username}`)
+    const response = userRecord.data.upUser
+    if (response[0].pass===loginInfo.pass) {
+      console.log('the password is equal')
+      userName=response[0].username
+      pass=response[0].pass
+      userId=response[0]._id
+    } else {
+      console.log('password does not match')
+    }
+
+}
 
 
   const handleChange = (evt) => {
@@ -22,11 +33,13 @@ const Login = ({userName, userId, pass}) => {
     <form onSubmit={handleSubmit}>
         <input
           type="username"
+          id="username"
           placeholder="username"
           onChange={handleChange}
           ></input>
         <input
           type="pass"
+          id="pass"
           placeholder="password"
           onChange={handleChange}
           ></input>

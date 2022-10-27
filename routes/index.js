@@ -14,9 +14,10 @@ router.post('/newrestaurant', controllers.createRestaurant)
 router.get('/restaurants/alpha', controllers.getAllRestaurantsAlpha)
 router.get('/restaurants', controllers.getAllRestaurantsCity)
 
-router.get('/users', controllers.getAllUsers)
+router.get('/validate/:user', controllers.validateUser)
+router.get('/allusers', controllers.getAllUsers)
+router.get('/user', controllers.getUser)
 router.get('/users/:id', controllers.getUserById)
-router.get('/users/one', controllers.getUser)
 
 router.post('/comment', controllers.makeComment)
 router.delete('/comment/:id', controllers.deleteComment)
