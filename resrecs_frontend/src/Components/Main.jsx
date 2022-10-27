@@ -9,17 +9,22 @@ import QuickSearch from './QuickSearch'
 import RestDetails from './RestDetails'
 import Search from './Search'
 import Thanks from '../pages/Thanks'
+import Login from './Login'
 
 
 const Main = () => {
-const initialState = ''
-const [searchTerm, setSearchTerm] = useState(initialState)
-const [searchResults, setSearchResults] = useState(null)
-const navigate = useNavigate()
+  const initialState = ''
+  const [searchTerm, setSearchTerm] = useState(initialState)
+  const [searchResults, setSearchResults] = useState(null)
+  const navigate = useNavigate()
+  
+  let username = ''
+  let pass= ''
+  let userId= ''
 
-const handleChange = (event) => {
-  setSearchTerm(event.target.value)
-}
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value)
+  }
 
 const searchByCity = async (evt) => {
   evt.preventDefault()
@@ -36,10 +41,10 @@ const searchByCity = async (evt) => {
 
 
 
-
   return (
     <div className="main">
       <QuickSearch term={searchTerm} setTerm={setSearchTerm} handleChange={handleChange} handleSubmit={searchByCity}/>
+      <div className="login"><Login username={username} pass={pass} userId={userId}/></div>
       <div>
       <Routes>
         <Route path="/" element={<Home />} />

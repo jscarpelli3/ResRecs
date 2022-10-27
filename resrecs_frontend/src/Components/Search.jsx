@@ -7,7 +7,7 @@ const Search = ({term}) => {
 
   return (
     <div className="rest-listing">
-      {term.map((rest, index) => (
+        {term.map((rest, index) => (
         <Link key={rest._id} to={`/restaurants/${rest._id}`}>
           <RestaurantListing
             key={rest._id}

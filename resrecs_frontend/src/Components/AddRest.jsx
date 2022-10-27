@@ -61,9 +61,9 @@ const AddRest = () => {
         <option value="Company Event">Company Event</option>
       </select><br></br>
       <label htmlFor="breakfast">Breakfast:</label>
-        <input type="checkbox" id="breakfast" name="breakfast" value="true" onChange={handleChange}></input>
+        <input type="checkbox" id="breakfast" name="breakfast" value="true" onChange={handleChange}></input><br></br>
       <label htmlFor="lunch">Lunch:</label>
-        <input type="checkbox" id="lunch" name="lunch" value="true" onChange={handleChange}></input>
+        <input type="checkbox" id="lunch" name="lunch" value="true" onChange={handleChange}></input><br></br>
       <label htmlFor="dinner">Dinner:</label>
         <input type="checkbox" id="dinner" name="dinner" value="true" onChange={handleChange}></input><br></br>
       <label htmlFor="notes">Message</label>
