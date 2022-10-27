@@ -1,4 +1,4 @@
-import RestaurantListing from '../Components/RestaurantListing'
+import RestaurantListing from './RestaurantListing'
 import { Link } from 'react-router-dom'
 
 
