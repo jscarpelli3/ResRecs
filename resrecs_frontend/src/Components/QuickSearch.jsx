@@ -6,7 +6,7 @@ const QuickSearch = ({handleChange, handleSubmit, term, setTerm}) => {
   
 
   return (
-    <div className='quick-search'>
+    <div className='qsearch'>
       <h3>Search by City:</h3>
       <form onSubmit={handleSubmit}>
           <input

@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('https://www.caterease.co.uk/wp-content/uploads/2019/01/Blurry-Restaurant-Try.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 

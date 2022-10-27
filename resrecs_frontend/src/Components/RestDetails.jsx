@@ -11,6 +11,7 @@ const RestDetails = () => {
   const [comments, setComments] = useState(null)
   const [restDetails, setRestDetails] = useState(null)
   const [addComment, toggleAddComment] = useState(false)
+  const [delComment, toggleDelComment] = useState(false)
   let { id } = useParams()
   let upId = id
   
@@ -26,8 +27,8 @@ const RestDetails = () => {
 
     const getComments = async () => {
     const response = await axios.get(`http://localhost:3001/api/comment/${id}`
-    )
-      setComments(response.data.comments)
+    ) 
+    setComments(response.data.comments)
     }
     
     useEffect(() => {
@@ -38,7 +39,7 @@ const RestDetails = () => {
     
     
     const deleteListing = async () => {
-      const response = await axios.delete(`http://localhost:3001/api//restaurants/${id}`)
+      const response = await axios.delete(`http://localhost:3001/api/restaurants/${id}`)
     }
     
     const startUpdate = () => {
@@ -72,6 +73,9 @@ const RestDetails = () => {
                   key={com?._id}
                   name={com?.user}
                   comment={com?.comment}
+                  id={com?._id}
+                  del={delComment}
+                  toggleDel={toggleDelComment}
                 />
               ))}
               </div>

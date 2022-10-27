@@ -29,7 +29,6 @@ const Main = () => {
 const searchByCity = async (evt) => {
   evt.preventDefault()
   try {
-          console.log('FUGGIN SERCH BY CITY')
     const response = await axios.get(`http://localhost:3001/api/restaurants?city=${searchTerm}`)
     setSearchResults(response.data.rests)
     console.log(response.data.rests)
@@ -43,9 +42,10 @@ const searchByCity = async (evt) => {
 
   return (
     <div className="main">
+      <div className='side'>
       <QuickSearch term={searchTerm} setTerm={setSearchTerm} handleChange={handleChange} handleSubmit={searchByCity}/>
       <div className="login"><Login username={username} pass={pass} userId={userId}/></div>
-      <div>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search term={searchResults}/>} />
@@ -56,7 +56,6 @@ const searchByCity = async (evt) => {
         <Route path="/thanks" element={<Thanks />} />
       </Routes>
       </div>
-    </div>
   )
 }
 
