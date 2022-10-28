@@ -1,8 +1,9 @@
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import Main from './Main'
 
-const AddRest = () => {
+const AddRest = (curUser) => {
   const initialState = { rname:'', cuisine: '', city: '', state:'', eventType: '', breakfast: false, lunch: false, dinner: false, website: '', notes: '', image: '', contributor: ''}
   const [formState, setFormState] = useState(initialState)
   const rname=false

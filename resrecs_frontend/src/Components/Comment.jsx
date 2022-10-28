@@ -6,7 +6,7 @@ const Comment = ({toggleDel, del, id, name, comment}) => {
     const response = await axios.delete(`http://localhost:3001/api/comment/${id}`)
     toggleDel(!del)
   } 
-
+console.log(name)
   return (
     <div className="comment-card">
       <h4>Comment By: {name}</h4>

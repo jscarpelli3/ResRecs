@@ -17,10 +17,9 @@ const Main = () => {
   const [searchTerm, setSearchTerm] = useState(initialState)
   const [searchResults, setSearchResults] = useState(null)
   const navigate = useNavigate()
-  
-  let username = ''
-  let pass= ''
-  let userId= ''
+  const initCurLogin = {username:'', pass:'', userId: ''}
+  const [curLogin, setCurLogin]=useState(initCurLogin)
+
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value)
@@ -44,13 +43,13 @@ const searchByCity = async (evt) => {
     <div className="main">
       <div className='side'>
       <QuickSearch term={searchTerm} setTerm={setSearchTerm} handleChange={handleChange} handleSubmit={searchByCity}/>
-      <div className="login"><Login username={username} pass={pass} userId={userId}/></div>
+      <div className="login"><Login username={curLogin.username} pass={curLogin.pass} userId={curLogin.userId}/></div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search term={searchResults}/>} />
         <Route path="/therules" element={<TheRules />} />
-        <Route path="/add" element={<AddRest />} />
+        <Route path="/add" element={<AddRest curUser={curLogin.username} curId={curLogin.userId}/>} />
         <Route path="/restaurants/:id" element={<RestDetails />} />
         <Route path="/update" element={<updateRest />} />
         <Route path="/thanks" element={<Thanks />} />

@@ -15,6 +15,7 @@ const Login = ({userName, userId, pass}) => {
       userName=response[0].username
       pass=response[0].pass
       userId=response[0]._id
+      setLoginInfo(initLogin)
     } else {
       console.log('password does not match')
     }
@@ -34,12 +35,14 @@ const Login = ({userName, userId, pass}) => {
         <input
           type="username"
           id="username"
+          defaultValue={loginInfo.username}
           placeholder="username"
           onChange={handleChange}
           ></input>
         <input
           type="pass"
           id="pass"
+          defaultValue={loginInfo.pass}
           placeholder="password"
           onChange={handleChange}
           ></input>
