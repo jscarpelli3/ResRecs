@@ -18,7 +18,8 @@ const createRestaurants = async () => {
       notes: 'Closed Mondays',
       image: 'https://images.otstatic.com/prod/24602000/1/huge.jpg',
       website: 'https://www.kettnerexchange.com/',
-      contributor: '6358c44055c3a24cd7f7bf88'
+      contributor: 'Mulder',
+      contributorId: '635beb25b2292b1ac380fd0c'
     },
     {
       rname: 'ATX Cocina',
@@ -30,9 +31,10 @@ const createRestaurants = async () => {
       lunch: false,
       dinner: true,
       notes: 'Company favorite - upscale modern Mexican',
-      image: '',
+      image: 'https://images.otstatic.com/prod/25099192/1/huge.jpg',
       website: 'https://www.atxcocina.com/',
-      contributor: '6358c44055c3a24cd7f7bf8a'
+      contributor: 'Mulder',
+      contributorId: '635beb25b2292b1ac380fd0c'
     },
     {
       rname: 'Ramerino - Italian Prime ',
@@ -45,9 +47,10 @@ const createRestaurants = async () => {
       dinner: true,
       notes:
         'Lunch is prix fixe.  Good for clients/business lunches and dinners',
-      image: '',
+      image: 'https://resizer.otstatic.com/v2/photos/xlarge/2/48632375.jpg',
       website: 'https://www.atxcocina.com/',
-      contributor: '6358c44055c3a24cd7f7bf88'
+      contributor: 'Mulder',
+      contributorId: '635beb25b2292b1ac380fd0c'
     },
     {
       rname: 'Wayfare Tavern',
@@ -60,8 +63,9 @@ const createRestaurants = async () => {
       dinner: true,
       notes: '',
       website: 'https://www.wayfaretavern.com/',
-      image: '',
-      contributor: '6358c44055c3a24cd7f7bf89'
+      image: 'https://images.otstatic.com/prod/23369699/1/huge.jpg',
+      contributor: 'Mulder',
+      contributorId: '635beb25b2292b1ac380fd0c'
     },
     {
       rname: 'Majordomo',
@@ -72,10 +76,11 @@ const createRestaurants = async () => {
       breakfast: false,
       lunch: false,
       dinner: true,
-      notes: '',
+      notes: 'We really enjoyed our time at Majordomo',
       website: 'https://www.majordomo.la/',
-      image: '',
-      contributor: '6358c44055c3a24cd7f7bf88'
+      image: 'https://images.otstatic.com/prod/25246909/1/huge.jpg',
+      contributor: 'TheDude',
+      contributorId: '635beb25b2292b1ac380fd0d'
     },
     {
       rname: 'Mooo',
@@ -88,8 +93,39 @@ const createRestaurants = async () => {
       dinner: true,
       notes: 'Seaport',
       website: 'https://www.mooorestaurant.com/',
-      image: '',
-      contributor: '6358c44055c3a24cd7f7bf89'
+      image: 'https://images.otstatic.com/prod/25161630/1/huge.jpg',
+      contributor: 'Scully',
+      contributorId: '635beb25b2292b1ac380fd0e'
+    },
+    {
+      rname: 'Committee',
+      cuisine: 'Mediterrenean',
+      city: 'Boston',
+      address: '50 Northern Ave, Boston, MA 02210',
+      eventType: 'Client Dinner',
+      breakfast: false,
+      lunch: true,
+      dinner: true,
+      notes: 'Seaport',
+      website: 'https://committeeboston.com',
+      image: 'https://images.otstatic.com/prod/24910658/1/huge.jpg',
+      contributor: 'TheDude',
+      contributorId: '635beb25b2292b1ac380fd0d'
+    },
+    {
+      rname: 'RedFarm',
+      cuisine: 'Chinese(Farm-Style)',
+      city: 'Boston',
+      address: '529 Hudston Street, btwn 10th & Charles St. (West Village)',
+      eventType: 'Client Dinner',
+      breakfast: false,
+      lunch: false,
+      dinner: true,
+      notes: 'ABoss fave spot - Additional location: Upper West Side',
+      website: 'https://www.redfarmnyc.com',
+      image: 'https://images.otstatic.com/prod/26799950/3/huge.jpg',
+      contributor: 'TheDude',
+      contributorId: '635beb25b2292b1ac380fd0d'
     }
   ]
 

@@ -23,9 +23,10 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
 
   return (
   <div className="add-container">
-    <form onSubmit={handleSubmit}>
-        <label htmlFor="rname">Name of Restaurant:</label>
+    <form className="add-form" onSubmit={handleSubmit}>
+        <label className="add-label"  htmlFor="rname">Name of Restaurant:</label>
         <input
+        className="add-input"
         type="text"
         id="rname"
         onChange={handleChange}
@@ -33,32 +34,36 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         placeholder={restname}
         />
         <br></br>
-      <label htmlFor="cuisine">Cuisine:</label>
+      <label className="add-label" htmlFor="cuisine">Cuisine:</label>
       <input
+       className="add-input"
         type="text"
         id="cuisine"
         onChange={handleChange}
         defaultValue={cuisine}
         placeholder={cuisine}/>
         <br></br>
-      <label htmlFor="city">City:</label>
+      <label className="add-label" htmlFor="city">City:</label>
       <input
+        className="add-input"
         type="text"
         id="city"
         onChange={handleChange}
         defaultValue={city}
         placeholder={city}
         /><br></br>
-      <label htmlFor="state">State:</label>
+      <label className="add-label" htmlFor="state">State:</label>
       <input
+        className="add-input"
         type="text"
         id="state"
         onChange={handleChange}
         defaultValue={state}
         placeholder={state}
         /><br></br>
-      <label htmlFor="eventType">Event Type:</label>
+      <label className="add-label" htmlFor="eventType">Event Type:</label>
       <select
+        className="add-input"
         id="eventType"
         onChange={handleChange}
         defaultValue={event}
@@ -69,14 +74,15 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         <option value="Client Event">Client Event</option>
         <option value="Company Event">Company Event</option>
       </select><br></br>
-      <label htmlFor="breakfast">Breakfast:</label>
-        <input type="checkbox" id="breakfast" name="breakfast" value={breakfast} defaultChecked={breakfast} onChange={handleChange}></input>
-      <label htmlFor="lunch">Lunch:</label>
-        <input type="checkbox" id="lunch" name="lunch" value={lunch} defaultChecked={lunch} onChange={handleChange} value></input>
-      <label htmlFor="dinner">Dinner:</label>
-        <input type="checkbox" id="dinner" name="dinner" defaultChecked={dinner} value={dinner} onChange={handleChange}></input><br></br>
-      <label htmlFor="notes">Message</label>
+      <label className="add-label" htmlFor="breakfast">Breakfast:</label>
+        <input className="add-input" type="checkbox" id="breakfast" name="breakfast" value={breakfast} defaultChecked={breakfast} onChange={handleChange}></input>
+      <label className="add-label" htmlFor="lunch">Lunch:</label>
+        <input  className="add-input" type="checkbox" id="lunch" name="lunch" value={lunch} defaultChecked={lunch} onChange={handleChange} value></input>
+      <label className="add-label" htmlFor="dinner">Dinner:</label>
+        <input className="add-input" type="checkbox" id="dinner" name="dinner" defaultChecked={dinner} value={dinner} onChange={handleChange}></input><br></br>
+      <label className="add-label" htmlFor="Notes">Website:</label>
       <textarea
+        className="add-input"
         id="notes"
         cols="30"
         rows="10"
@@ -84,15 +90,17 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         defaultValue={notes}
         placeholder={notes}>
       </textarea><br></br>
-      <label htmlFor="website">Website:</label>
+      <label className="add-label" htmlFor="website">Website:</label>
       <input
+        className="add-input"
         type="text"
         id="website"
         onChange={handleChange}
         defaultValue={website}
         placeholder={website}/><br></br>
-      <label htmlFor="image">Image:</label>
+      <label className="add-label" htmlFor="image">Image:</label>
       <input
+        className="add-input"
         type="text"
         id="image"
         onChange={handleChange}

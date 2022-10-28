@@ -10,7 +10,7 @@ const NewComment = ({updated, toggleUpdated, toggleAddComment, addComment, id}) 
   
   const submitComment = (evt) => {
     evt.preventDefault()
-    let newCom = {...newComment, user: "6352d1d1e2832c5fd43ad0e7", rest: id}
+    let newCom = {...newComment, user: "Jon", rest: id}
     axios.post('http://localhost:3001/api/comment', newCom)
     toggleAddComment(!addComment)
     toggleUpdated(!updated)
@@ -23,10 +23,10 @@ const NewComment = ({updated, toggleUpdated, toggleAddComment, addComment, id}) 
   return (
 
         <form onSubmit={submitComment}>
-        <button>Submit Comment</button>
+        <button className='submit-button'>Submit Comment</button>
         {addComment ? <div className="new-comment">
                     {/* <label htmlFor="comment">Add a comment:</label> */}
-                    <textarea
+                    <textarea className='new-comment-input'
                       id="comment"
                       cols="30"
                       rows="10"

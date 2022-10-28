@@ -6,24 +6,46 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const createComments = async () => {
   const newComments = [
     {
-      user: '6359866ddf2351809b34ce88',
-      comment: 'This kettner Place is bannanas! - freddy',
-      rest: '63598672e1da67f72b1eb624'
+      userId: '635beb25b2292b1ac380fd0c',
+      user: 'Mulder',
+      comment: 'Too many people.',
+      rest: '635bf18e03127a709e25c768'
     },
     {
-      user: '6359866ddf2351809b34ce88',
-      comment: 'This kettner Place is bannanas! - freddy',
-      rest: '63598672e1da67f72b1eb624'
+      userId: '635beb25b2292b1ac380fd0d',
+      user: 'Scully',
+      comment: 'This kettner Place is bannanas!',
+      rest: '635bf18e03127a709e25c768'
     },
     {
-      user: '6359866ddf2351809b34ce87',
-      comment: 'This Place is ATX CRAZY! this is jack',
-      rest: '63598672e1da67f72b1eb625'
+      userId: '635beb25b2292b1ac380fd0d',
+      user: 'Scully',
+      comment: 'MAJOR-AWESOME-O!',
+      rest: '635bf18e03127a709e25c76c'
     },
     {
-      user: '6359866ddf2351809b34ce87',
-      comment: 'This Place is ATX! this is jack',
-      rest: '63598672e1da67f72b1eb625'
+      userId: '635beb25b2292b1ac380fd0c',
+      user: 'Mulder',
+      comment: 'AUSTIN REALLY IS WEIRD!!! NOT!!',
+      rest: '635bf18e03127a709e25c769'
+    },
+    {
+      userId: '635beb25b2292b1ac380fd0c',
+      user: 'Mulder',
+      comment: 'This Place is ATX CRAZY!',
+      rest: '635bf18e03127a709e25c769'
+    },
+    {
+      userId: '635beb25b2292b1ac380fd0c',
+      user: 'Mulder',
+      comment: 'Ramerino is a weird name',
+      rest: '635bf18e03127a709e25c76a'
+    },
+    {
+      userId: '635beb25b2292b1ac380fd0e',
+      user: 'TheDude',
+      comment: 'Wayfare Tavern Rules',
+      rest: '635bf18e03127a709e25c76b'
     }
   ]
 

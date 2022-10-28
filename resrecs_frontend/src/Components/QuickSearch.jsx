@@ -16,7 +16,7 @@ const QuickSearch = ({handleChange, handleSubmit, term, setTerm}) => {
             placeholder="city"
             onChange={handleChange}
             ></input>
-            <button type="submit">Submit</button>
+            <button className="qs-submit" type="submit">Submit</button>
             
       </form>
     </div>

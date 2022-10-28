@@ -35,7 +35,7 @@ const RestDetails = () => {
       getDetails()
       getComments()
       toggleFinished(false)
-    }, [updateFinished])
+    }, [updateFinished, delComment])
     
     
     const deleteListing = async () => {
@@ -51,18 +51,17 @@ const RestDetails = () => {
     return (
       <div className="detail-container">
         <div className="rest-details">
-          <h2 className="rest-name">{restDetails?.rname}</h2>
-          <h4>{restDetails?.city}</h4>
-          <h3 className="cuisine">{restDetails?.cuisine}</h3>
-          <Link to="/"><button onClick={deleteListing}>Delete Listing</button></Link> <button onClick={startUpdate}>Update Listing</button>
+          <h2 className="rest-name">{restDetails?.rname} - <span>{restDetails?.city}</span></h2>
+          <h5>Contributed by: {restDetails?.contributor}</h5><br></br>
+          <h4 className="cuisine">Cuisine:  {restDetails?.cuisine}</h4>
           <div className='img-container'> 
             <img alt="rest-image" style={{ width: 360, height: 360 }} src={restDetails?.image}></img>
           </div>
+          <Link to="/"><button className="delete-rest" onClick={deleteListing}>Delete Restaurant</button></Link> <button onClick={startUpdate}>Update Restaurant</button>
           <h5>Website: <a href={restDetails?.website} target="_blank">{restDetails?.website}</a></h5>
           <p className='notes'>Used for: {restDetails?.eventType}</p>
           <p className='notes'>Breafast: {restDetails?.breakfast ? "Yes" : "No"}<br></br>Lunch:{restDetails?.lunch ? "Yes" : "No"}<br></br>Dinner:{restDetails?.dinner ? "Yes" : "No"}</p>
-          <h5>Contributed by: {restDetails?.contributor}</h5>
-          <p className='notes'>Notes:{restDetails?.notes}</p>
+          <p className='notes'>Notes:  {restDetails?.notes}</p>
           <div className="comments"></div>
             <h2>Comments:</h2>
                <button onClick={addComment ? undefined : addingComment}>Add Comment</button>

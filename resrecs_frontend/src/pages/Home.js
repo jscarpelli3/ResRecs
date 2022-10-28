@@ -32,6 +32,7 @@ const Home = () => {
             image={rest?.image}
             name={rest?.rname}
             city={rest?.city}
+            cuisine={rest?.cuisine}
           />
         </Link>
       ))}
