@@ -6,6 +6,10 @@
   size: 100%;
 }
 
+.logo {
+  border-radius: 12px;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -45,7 +49,7 @@
 }
 
 .rest-card:hover {
-  box-shadow:0 6px 4px 0 rgba(0,0,0,0.30);
+  box-shadow:0 10px 2px 0 rgba(0, 0, 0, 0.53);
   transition: 0.2s;
 }
 
@@ -101,32 +105,34 @@ h4, h5, h6 {
 /* HEADER STYLES */
 
 header {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 254, 220, 0.893);
   font-family: 'Lexend';
   padding: 12px 18px 0 18px;
   max-height: 130px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  border-radius: 8px;
+  box-shadow:0 12px 4px 0 rgba(0,0,0,0.30);
+}
+
+
+a {
+  color: rgb(147, 147, 147);
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .home, .rules, .add {
   margin: 0;
   text-align: right;
-  transition: 0.3s;
-}
-
-a {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: none;
 }
 
 a:hover {
-  color: rgb(249, 255, 166);
+  color: rgb(174, 174, 174);
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .logo {
@@ -181,8 +187,9 @@ background-color: rgba(255, 255, 255, 0.363);
   padding-top: 10px;
   margin: 12px;
   text-align: left;
+  
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 35% 65%;
 }
 
 .add-label {

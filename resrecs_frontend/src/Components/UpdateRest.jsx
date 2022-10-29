@@ -26,7 +26,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
     <form className="add-form" onSubmit={handleSubmit}>
         <label className="add-label"  htmlFor="rname">Name of Restaurant:</label>
         <input
-        className="add-input"
+        className="submit-button"
         type="text"
         id="rname"
         onChange={handleChange}
@@ -36,7 +36,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         <br></br>
       <label className="add-label" htmlFor="cuisine">Cuisine:</label>
       <input
-       className="add-input"
+       className="submit-button"
         type="text"
         id="cuisine"
         onChange={handleChange}
@@ -45,7 +45,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         <br></br>
       <label className="add-label" htmlFor="city">City:</label>
       <input
-        className="add-input"
+        className="submit-button"
         type="text"
         id="city"
         onChange={handleChange}
@@ -54,7 +54,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         /><br></br>
       <label className="add-label" htmlFor="state">State:</label>
       <input
-        className="add-input"
+        className="submit-button"
         type="text"
         id="state"
         onChange={handleChange}
@@ -63,7 +63,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         /><br></br>
       <label className="add-label" htmlFor="eventType">Event Type:</label>
       <select
-        className="add-input"
+        className="submit-button"
         id="eventType"
         onChange={handleChange}
         defaultValue={event}
@@ -75,14 +75,14 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         <option value="Company Event">Company Event</option>
       </select><br></br>
       <label className="add-label" htmlFor="breakfast">Breakfast:</label>
-        <input className="add-input" type="checkbox" id="breakfast" name="breakfast" value={breakfast} defaultChecked={breakfast} onChange={handleChange}></input>
+        <input className="submit-button" type="checkbox" id="breakfast" name="breakfast" value={breakfast} defaultChecked={breakfast} onChange={handleChange}></input><br></br>
       <label className="add-label" htmlFor="lunch">Lunch:</label>
-        <input  className="add-input" type="checkbox" id="lunch" name="lunch" value={lunch} defaultChecked={lunch} onChange={handleChange} value></input>
+        <input  className="submit-button" type="checkbox" id="lunch" name="lunch" value={lunch} defaultChecked={lunch} onChange={handleChange} value></input><br></br>
       <label className="add-label" htmlFor="dinner">Dinner:</label>
-        <input className="add-input" type="checkbox" id="dinner" name="dinner" defaultChecked={dinner} value={dinner} onChange={handleChange}></input><br></br>
-      <label className="add-label" htmlFor="Notes">Website:</label>
+        <input className="submit-button" type="checkbox" id="dinner" name="dinner" defaultChecked={dinner} value={dinner} onChange={handleChange}></input><br></br>
+      <label className="add-label" htmlFor="Notes">Notes:</label>
       <textarea
-        className="add-input"
+        className="submit-button"
         id="notes"
         cols="30"
         rows="10"
@@ -92,7 +92,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
       </textarea><br></br>
       <label className="add-label" htmlFor="website">Website:</label>
       <input
-        className="add-input"
+        className="submit-button"
         type="text"
         id="website"
         onChange={handleChange}
@@ -100,7 +100,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
         placeholder={website}/><br></br>
       <label className="add-label" htmlFor="image">Image:</label>
       <input
-        className="add-input"
+        className="submit-button"
         type="text"
         id="image"
         onChange={handleChange}
