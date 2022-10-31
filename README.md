@@ -2,6 +2,10 @@
 
 **_A restaurant recommendation application for coworkers and event planners_**
 
+_*Deployed App Link*_
+
+https://resrecs.herokuapp.com/
+
 ---
 
 ResRec is an app that provides a simple interface for coworkers to share their favorite restaurants to host business meetings, client dinners and other events associated with their company.
