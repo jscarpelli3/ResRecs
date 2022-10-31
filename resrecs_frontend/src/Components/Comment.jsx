@@ -3,7 +3,7 @@ import axios from 'axios'
 const Comment = ({toggleDel, del, id, name, comment}) => {
   
   const deleteComment = async () => {
-    const response = await axios.delete(`http://localhost:3001/api/comment/${id}`)
+    const response = await axios.delete(`/api/comment/${id}`)
     toggleDel(!del)
   } 
   

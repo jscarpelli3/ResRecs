@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link, useNavigate, Routes, Route } from 'react-router-dom'
-// import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
 import TheRules from '../pages/TheRules'
 import AddRest from './AddRest'
@@ -30,7 +29,7 @@ const searchByCity = async (evt) => {
   evt.preventDefault()
   try {
           console.log('FUGGIN SERCH BY CITY')
-    const response = await axios.get(`http://localhost:3001/api/restaurants?city=${searchTerm}`)
+    const response = await axios.get(`/api/restaurants?city=${searchTerm}`)
     setSearchResults(response.data.rests)
     console.log(response.data.rests)
     navigate('/Search')

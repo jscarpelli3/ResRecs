@@ -12,7 +12,7 @@ const AddRest = (curUser) => {
   const handleSubmit = (evt) => {
     evt.preventDefault()
     let newRest = {...formState, contributor: "6352d1d1e2832c5fd43ad0e7"}
-    axios.post('http://localhost:3001/api/newrestaurant', newRest)
+    axios.post('/api/newrestaurant', newRest)
     setFormState(initialState)
     navigate('/thanks')
   }

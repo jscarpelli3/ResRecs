@@ -28,7 +28,7 @@ const Main = () => {
 const searchByCity = async (evt) => {
   evt.preventDefault()
   try {
-    const response = await axios.get(`http://localhost:3001/api/restaurants?city=${searchTerm}`)
+    const response = await axios.get(`/api/restaurants?city=${searchTerm}`)
     setSearchResults(response.data.rests)
     console.log(response.data.rests)
     navigate('/Search')

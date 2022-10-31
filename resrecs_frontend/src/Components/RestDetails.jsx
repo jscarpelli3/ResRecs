@@ -20,13 +20,13 @@ const RestDetails = () => {
   }
 
   const getDetails = async () => {
-    const response = await axios.get(`http://localhost:3001/api/restaurants/${id}`
+    const response = await axios.get(`/api/restaurants/${id}`
     )
       setRestDetails(response.data)
     }
 
     const getComments = async () => {
-    const response = await axios.get(`http://localhost:3001/api/comment/${id}`
+    const response = await axios.get(`/api/comment/${id}`
     ) 
     setComments(response.data.comments)
     }
@@ -39,7 +39,7 @@ const RestDetails = () => {
     
     
     const deleteListing = async () => {
-      const response = await axios.delete(`http://localhost:3001/api/restaurants/${id}`)
+      const response = await axios.delete(`/api/restaurants/${id}`)
     }
     
     const startUpdate = () => {

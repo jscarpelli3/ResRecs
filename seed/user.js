@@ -11,7 +11,7 @@ const createUsers = async () => {
       homeoffice: 'Chicago',
       image: '',
       department: 'Flavor department',
-      about: "I'm great"
+      about: "I'm weird"
     },
     {
       username: 'Scully',
@@ -19,10 +19,10 @@ const createUsers = async () => {
       homeoffice: 'Los Angeles',
       image: '',
       department: 'Digging and Forking department',
-      about: "I'm decent"
+      about: "I'm Great"
     },
     {
-      username: 'TheDude',
+      username: 'Walter Skinner',
       pass: '12345',
       homeoffice: 'Austin',
       image: '',

@@ -1,6 +1,5 @@
 
 .App {
-  /* text-align: center; */
   background-size: cover;
   color: white;
   size: 100%;
@@ -112,7 +111,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /* border: 2px solid black; */
   border-radius: 8px;
   box-shadow:0 12px 4px 0 rgba(0,0,0,0.30);
 }

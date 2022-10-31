@@ -11,7 +11,7 @@ const UpdateRest = ({updated, toggleUpdated, toggleForm, id, restname, cuisine, 
 
   const handleSubmit = (evt) => {
     evt.preventDefault()
-    axios.put(`http://localhost:3001/api/restaurants/${id}`, formState)
+    axios.put(`/api/restaurants/${id}`, formState)
     setFormState(initialState)
     toggleForm()
     toggleUpdated(!updated)

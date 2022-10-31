@@ -11,7 +11,7 @@ const NewComment = ({updated, toggleUpdated, toggleAddComment, addComment, id}) 
   const submitComment = (evt) => {
     evt.preventDefault()
     let newCom = {...newComment, user: "Jon", rest: id}
-    axios.post('http://localhost:3001/api/comment', newCom)
+    axios.post('/api/comment', newCom)
     toggleAddComment(!addComment)
     toggleUpdated(!updated)
   }
