@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // let MONGODB_URI = 'mongodb://127.0.0.1:27017/resrecDB'
-let dbUrl =
+let dbURL =
   process.env.NODE_ENV === 'production'
     ? process.env.MONGODB_URI
     : 'mongodb://127.0.0.1:27017/<database_name>'
