@@ -9,7 +9,7 @@ const Home = () => {
 
   const getRests = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/api/main')
+      const response = await axios.get('/api/main')
       setRests(response.data.rests)
     } catch (err) {
       console.log(err)
