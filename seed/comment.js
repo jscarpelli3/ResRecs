@@ -6,46 +6,52 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const createComments = async () => {
   const newComments = [
     {
-      userId: '635beb25b2292b1ac380fd0c',
+      userId: '63609faae02994d53035a14e',
       user: 'Mulder',
       comment: 'Too many people.',
-      rest: '635bf18e03127a709e25c768'
+      rest: '6360a0c13a7a307b7097fb38'
     },
     {
-      userId: '635beb25b2292b1ac380fd0d',
+      userId: '63609faae02994d53035a14f',
       user: 'Scully',
       comment: 'This kettner Place is bannanas!',
-      rest: '635bf18e03127a709e25c768'
+      rest: '6360a0c13a7a307b7097fb34'
     },
     {
-      userId: '635beb25b2292b1ac380fd0d',
+      userId: '63609faae02994d53035a14f',
       user: 'Scully',
-      comment: 'MAJOR-AWESOME-O!',
-      rest: '635bf18e03127a709e25c76c'
+      comment: 'The client loved this restaurant!',
+      rest: '6360a0c13a7a307b7097fb35'
     },
     {
-      userId: '635beb25b2292b1ac380fd0c',
+      userId: '63609faae02994d53035a14e',
       user: 'Mulder',
-      comment: 'AUSTIN REALLY IS WEIRD!!! NOT!!',
-      rest: '635bf18e03127a709e25c769'
+      comment: 'Loved this place',
+      rest: '6360a0c13a7a307b7097fb39'
     },
     {
-      userId: '635beb25b2292b1ac380fd0c',
+      userId: '63609faae02994d53035a14e',
       user: 'Mulder',
-      comment: 'This Place is ATX CRAZY!',
-      rest: '635bf18e03127a709e25c769'
+      comment: 'This Place is my favorite!',
+      rest: '6360a0c13a7a307b7097fb35'
     },
     {
-      userId: '635beb25b2292b1ac380fd0c',
+      userId: '63609faae02994d53035a14e',
       user: 'Mulder',
-      comment: 'Ramerino is a weird name',
-      rest: '635bf18e03127a709e25c76a'
+      comment: 'Ramerino is a fun name',
+      rest: '6360a0c13a7a307b7097fb36'
     },
     {
-      userId: '635beb25b2292b1ac380fd0e',
-      user: 'TheDude',
+      userId: '63609faae02994d53035a150',
+      user: 'Walter Skinner',
       comment: 'Wayfare Tavern Rules',
-      rest: '635bf18e03127a709e25c76b'
+      rest: '6360a0c13a7a307b7097fb37'
+    },
+    {
+      userId: '63609faae02994d53035a150',
+      user: 'Walter Skinner',
+      comment: 'We really did not enjoy RedFarm',
+      rest: '6360a0c13a7a307b7097fb3b'
     }
   ]
 

@@ -4,8 +4,8 @@ require('dotenv').config()
 // let MONGODB_URI = 'mongodb://127.0.0.1:27017/resrecDB'
 let dbUrl =
   process.env.NODE_ENV === 'production'
-    ? process.env.MONGODB_URI
-    : 'mongodb://127.0.0.1:27017/resrecsDBatlas'
+    ? 'mongodb+srv://jscarpelli:superhero12@resrecscluster.onm8q8l.mongodb.net/?retryWrites=true&w=majority'
+    : 'mongodb://127.0.0.1:27017/resrecsDB'
 
 mongoose
   .connect(dbUrl)
