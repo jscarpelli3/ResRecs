@@ -6,7 +6,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const createUsers = async () => {
   const newUsers = [
     {
-      username: 'Mulder',
+      username: 'Fox Mulder',
       pass: '12345',
       homeoffice: 'Chicago',
       image: '',
@@ -14,7 +14,7 @@ const createUsers = async () => {
       about: "I'm weird"
     },
     {
-      username: 'Scully',
+      username: 'Dana Scully',
       pass: '12345',
       homeoffice: 'Los Angeles',
       image: '',

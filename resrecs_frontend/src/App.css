@@ -299,3 +299,7 @@ label {
     transform: rotate(360deg);
   }
 }
+
+.listing-h4 {
+  color: cornsilk;
+}

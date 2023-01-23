@@ -18,7 +18,7 @@ Currently the app displays all the restaurants on startup. It is possile to add 
 
 **Current Issues & Future upgrades:**
 
-Currently the deployment is not connected to the data. Will be working to correct this asap. The Login simply verfies that the password matches the password in the record associate with the given username.
+The Login simply verfies that the password matches the password in the record associate with the given username.
 
 In the future I will be completing the login functionality so that when a user adds a restaurant and/or comment, those records will be associated with that user. Jumping off from there, It will then be possilbe to search by user in order to see which restaurants a particular user has contributed to the over all database.
 
@@ -42,6 +42,8 @@ ERD & Component Diagrams - https://drive.google.com/file/d/16XZxXLR3D9uti0ZGfGHf
 **Picture Credits:**
 
 Pictures taken from:
-opentable.com
-https://unsplash.com/
-& https://etc.usf.edu/clipart/70400/70476/70476_263_rm-050_b.htm (fav.ico)
+>https://opentable.com
+
+>https://unsplash.com/
+
+>https://etc.usf.edu/clipart/70400/70476/70476_263_rm-050_b.htm (fav.ico)
